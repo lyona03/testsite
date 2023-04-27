@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка в Гринатом</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form class="applications" autocomplete="off" action='sender.php' method='post'>
+        <h1>Заявка в Гринатом</h1>
+        <div class="form-app"> 
+          <div>
+            <label>ФИО <span>*</span></label>
+            <input type='text' name='name' required></div>
+          <div>
+            <label>Организация<span>*</span></label>
+            <input type='text' name='organization' required></div>
+            <div>
+                <label>Внутренний e-mail<span>*</span></label>
+                <input type='text' name='email' required></div>
+            <div>
+                <label>Подразделение<span>*</span></label>
+                <input type='text' name='unit' required></div>
+            <div>
+                <label>Здание<span>*</span></label>
+                <input type='text' name='building' required></div>   
+            <div>
+                <label>Комната<span>*</span></label>
+                <input type='text' name='room' required></div> 
+            <div>
+                <label>Телефон<span>*</span></label>
+                <input type='text' name='phone' required></div>
+            <div>
+                <label>Причина обращения<span>*</span></label>
+                <select name="reason" id="reason-select">
+                    <option value="">Выберите причину обращения...</option>
+                    <option value="pc">Персональный компьютер</option>
+                    <option value="mail">Электронная почта</option>
+                    <option value="network">Сеть</option>
+                    <option value="office-equipment">Оргтехника(МФУ, принтер, сканер)</option>
+                    <option value="internet">Интернет</option>
+                    <option value="antivirus">Антивирус</option>
+                    <option value="network-folders">Сетевые папки</option>
+                    <option value="central-resourses">ЕОСДО\1С\НСМ\SAP\Captiva\Рекорд мобайл и другие централизованные ресурсы</option>
+                    <option value="adress-journal">Адресная книга АО"ГНЦ НИИАР"\Внутренний или внешний портал</option>
+                    <option value="presentations">Проведение конференций, совещаний, презентаций</option>
+                    <option value="bd">Базы данных</option>
+                    <option value="inf-systems">Информационные системы ГНЦ НИИАР</option>
+                </select>
+            </div>
+                <div>
+                    <label>Проблема<span>*</span></label>
+                    <select name="problem" id="problem-select">
+                        <option value="">Необходимо выбрать причину обращения</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+          <div>
+            <label>Подробное описание проблемы<span>*</span></label>
+            <textarea id="description-of-the-problem" name="description" rows="6" cols="70">
+            Опишите свою проблему здесь...
+            </textarea>
+            </div>
+          </div>
+          <button class="send-form" type="button">Отправить заявку</button>
+        </div>
+        <div class="status"></div>
+        </form>
+</body>
+</html>

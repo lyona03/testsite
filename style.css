@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #647e84;
+}
+
+.applications{
+    width:800px;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: #242d30;
+    text-align: center;
+}
+
+.applications h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.applications label{
+    color: white;
+}
+
+.applications span{
+    color: red;
+}
+
+.applications input[type = "text"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #647e84;
+    padding: 14px 20px;
+    width: 400px;
+    height: 5px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.applications input[type = "text"]:focus{
+    width: 500px;
+    border-color: #455b92; 
+}
+
+.applications select{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #647e84;
+    padding: 14px 20px;
+    width: 450px;
+    height: 5px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.applications textarea{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #647e84;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.applications button{
+    border: 0;
+    background: #455b92;;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #455b92;
+    padding: 14px 60px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;    
+    cursor: pointer;
+}
